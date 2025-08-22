@@ -5,7 +5,7 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0-noble AS base
 USER $APP_UID
 WORKDIR /app
 EXPOSE 5000
-ENV ASPNETCORE_URLS=http://+:5000
+ENV ASPNETCORE_URLS=http://0.0.0.0:5000
 ENV DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=false
 
 # This stage is used to build the service project
